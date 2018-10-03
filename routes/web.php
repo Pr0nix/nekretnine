@@ -8,7 +8,7 @@ Route::get('/estates/{estate}', 'EstatesController@show');
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/admin', 'AdminController@index'); 
+Route::get('/admin', 'AdminController@index')->middleware('auth');
 
 Route::get('/admin/create', 'AdminController@create');
 
