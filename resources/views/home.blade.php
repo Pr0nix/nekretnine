@@ -1,24 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<html>
+    <body>
+        <main role="main">
 
-                    You are logged in!
-                    <button><a href="/estates">Continue to site</a></button>
+            <section class="jumbotron text-center">
+                <div class="container">
+                <h1 class="jumbotron-heading"> {{ $name }}</h1>
+                <p class="lead text-muted">Kod nas samo najbolje mozete naci preko 500000 ponuda na raznim lokacijama sirom crne gore.</p>
+                <p>
+                    <a href="/estates" class="btn btn-primary my-2">NEKRETNINE</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p>
+                </div>
+            </section>
+        
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </main>
+    </body>
+</html>
+
 @endsection
