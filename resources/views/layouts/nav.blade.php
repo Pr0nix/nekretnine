@@ -5,18 +5,16 @@
         <strong>Nekretnine</strong>
         </a>
         @if (Route::has('login'))
-            <div class="top-right links ml-auto">
+            <div class="d-flex top-right links ml-auto">
                 @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                    <a class="nav-link" href="#">{{ Auth::user()->name }}</a>
+                    <a href="{{ url('/') }}" class="nav-link">Home</a>
+                    <a href="{{ url('/logout') }}" class="nav-link">Logout</a>
+                    <a href="#" class="nav-link">{{ ucfirst(Auth::user()->name) }}</a>
                 @else
-                    <a href="{{ route('login') }}">Login</a>
-                    <a href="{{ route('register') }}">Register</a>
+                    <a href="{{ route('login') }}" class="nav-link">Login</a>
+                    <a href="{{ route('register') }}" class="nav-link">Register</a>
                 @endauth
             </div>
         @endif
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     </div>
 </nav>

@@ -10,7 +10,9 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/estates/{{ $estate->id }}">View</a></button>
+                        @auth
                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        @endauth
                     </div>
                     <small class="text-muted">{{$estate->created_at->toFormattedDateString() }}</small>
                 </div>

@@ -48,10 +48,20 @@
             </div>
 
             <div class="form-group">
-                <label for="estate_type">Estate type</label>
-                <input name="estate_type" id="estate_type" class="form-control">
+                <label for="estate_type">Estate Type</label>
+                <select name="estate_type" id="estate_type" class="form-control">
+                    <option value="stan">Stan</option>
+                    <option value="kuca">Kuca</option>
+                    <option value="pomocni_objekat">Pomocni objekat</option>
+                    <option value="poslovni_prostor">Poslovni prostor</option>
+                    <option value="lokali_i_skladista">Lokali i skladista</option>
+                    <option value="ugostiteljski-objekat">Ugostiteljskui objekat</option>
+                    <option value="proizvodni-objekat">Proizvodni objekat</option>
+                    <option value="sportski-objekat">Sportski objekat</option>
+                    <option value="gradjevinsko-zemljiste">Gradjevinsko zemljiste</option>
+                    <option value="poljoprivredno-zemljiste">Poljoprivredno zemljiste</option>
+                </select>
             </div>
-
             <div class="form-group">
                 <label for="method">Method</label>
                 <input name="method" id="method" class="form-control">

@@ -11,8 +11,7 @@
                 <h1 class="jumbotron-heading"> {{ $name }}</h1>
                 <p class="lead text-muted">Kod nas samo najbolje mozete naci preko 500000 ponuda na raznim lokacijama sirom crne gore.</p>
                 <p>
-                    <a href="/estates" class="btn btn-primary my-2">NEKRETNINE</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    <a href="/estates" class="btn btn-primary my-2">GO TO NEKRETNINE</a>
                 </p>
                 </div>
             </section>
